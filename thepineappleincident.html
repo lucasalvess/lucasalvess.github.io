@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!------------------------------------------------------------------------------------------------------------
+  MUITO ESPERTO ABRINDO O CODIGO DO SITE, PARA TE AJUDAR PROCURE NA INTERNET UM CONVERSOR ONLINE DE CRIFRA DE CESAR EM PORTUGUES 
+  ------------------------------------------------------------------------------------------------------------->
+
+  <title>Welcome to the pineapple incident</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style type="text/css">
+
+body{
+	background-color: #2c2c2c;
+	font-family: 'Press Start 2P', cursive;
+}
+p.code-green{
+	color: #00FF00;
+}
+.code-pink{
+	color: #FF00FF;
+}
+.logo{
+	width: 250px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+img{
+	size: cover;
+	position: center;
+}
+
+</style>
+<body>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col">
+				<img class="logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMi4wMDIgNTEyLjAwMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAwMiA1MTIuMDAyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzVDOTEzQjsiIGQ9Ik0yNzUuMTAxLDEzMS4zODhjLTMuOTk4LTQ3LjczNywzMS4zMjQtNjguMTM0LDMxLjMyNC02OC4xMzQgIGMtNDYuMTc4LDEuNjMxLTcwLjY0NSw0MC43NzktNzAuNjQ1LDQwLjc3OWMtMTAuODU1LTE4Ljc1MSwxMy42NTYtNTcuOTE0LDMxLjMwOS02OC4xMTljLTQ2LjE2NCwxLjYzMS01Mi45NzcsMzAuNjAzLTUyLjk3NywzMC42MDMgIEMxOTIuNDMxLDI4Ljk3MSwxOTkuMjU5LDAsMTk5LjI1OSwwYy0xNi4xODIsOS4zNTQtMjUuNTA3LDMwLjUwMi0zMC45MDYsNTAuNzExbC0zMy40NzUtMzguNTU3ICBjLTMuMzIsMTUuMSwyLjI1Miw0NS44NDYsOC4yNTcsNzEuNjI3Yy00NC4wODQtMjUuODU0LTg1LjE5Ni0yLjE4LTg1LjE5Ni0yLjE4YzU3LjAxOSwxNy4xMzQsNzguNjcyLDU0LjY2Niw3OC42NzIsNTQuNjY2ICBzLTU2Ljk5LTE3LjEzNC04MS40ODYsMjIuMDQyYzM3LjQ3NC0xLjMyOCw2NC45NTgsNy4yMDMsODQuNTMzLDE3Ljc0Yy0xNi43ODgsNC4xNzEtNDUuMzk5LTMuNDA3LTYyLjg2NSwxOS43OTEgIGMwLDAsNDYuMTY0LTEuNjMxLDU1LjU5LDE1LjIxNGMtMzEuMzUzLDguODc4LTUxLjU5MSwzMi41MDgtNTEuNTkxLDMyLjUwOGM2My44MzItMTEuODA4LDEzMS42OTIsMjQuMDc4LDEzMS42OTIsMjQuMDc4ICBsODguMzE0LTUwLjk4NWMtMTQuODQtNjYuNTAyLDM4LjEzNy05Ny4xMDUsMzguMTM3LTk3LjEwNUMyOTkuNTk4LDkyLjIyNywyNzUuMTAxLDEzMS4zODgsMjc1LjEwMSwxMzEuMzg4Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkFDMzM7IiBkPSJNNDM4LjQ5OSwzMjIuNjE0YzM1LjkxNSw2Mi4yMDEsMTcuNTgyLDE0MC4wMjEtNDAuOTUyLDE3My44MTRzLTEzNS4wOTgsMTAuNzY5LTE3MC45OTktNTEuNDE4ICBsLTIyLjkzNy0zOS43NGMtMzUuOTI5LTYyLjIxNS0xNy41ODItMTQwLjAwNiw0MC45NTItMTczLjc5OWM1OC41MzQtMzMuODA3LDEzNS4wOTgtMTAuNzgzLDE3MC45OTksNTEuNDE4TDQzOC40OTksMzIyLjYxNHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQ0M0RDsiIGQ9Ik00MTEuODk3LDM3NC4yNzZsLTI4LjE2My0xMS45NTJsMTEuOTUyLTI4LjE0OGwyOC4xNjMsMTEuOTM4TDQxMS44OTcsMzc0LjI3NnogTTM4Ny45OTMsNDMwLjU4NiAgbC0yOC4xNjMtMTEuOTM4bDExLjk2Ni0yOC4xNzdsMjguMTQ5LDExLjk1M0MzOTkuOTQ2LDQwMi40MjQsMzg3Ljk5Myw0MzAuNTg2LDM4Ny45OTMsNDMwLjU4NnogTTM2NC4wNzUsNDg2Ljk0MmwtMjguMTYzLTExLjk1MyAgbDExLjk1Mi0yOC4xNzdsMjguMTc3LDExLjk2NkwzNjQuMDc1LDQ4Ni45NDJ6IE0zMDMuNDksMzk0LjczbDExLjk1Mi0yOC4xNzdsMjguMTc3LDExLjk2NmwtMTEuOTY2LDI4LjE3N0wzMDMuNDksMzk0LjczeiAgIE0zMDcuNzM0LDQ2My4wMDhsLTI4LjE0OS0xMS45NTJsMTEuOTUzLTI4LjE0OWwyOC4xNDksMTEuOTY2QzMxOS42ODcsNDM0Ljg3MywzMDcuNzM0LDQ2My4wMDgsMzA3LjczNCw0NjMuMDA4eiBNMjQ3LjE2NCwzNzAuODI1ICBsMTEuOTY2LTI4LjE2M2wyOC4xNjMsMTEuOTM4bC0xMS45NjYsMjguMTc3QzI3NS4zMjcsMzgyLjc3NywyNDcuMTY0LDM3MC44MjUsMjQ3LjE2NCwzNzAuODI1eiBNMjUxLjQyMiw0MzkuMTAzbC0yOC4xNjMtMTEuOTM4ICBsMTEuOTUyLTI4LjE2M2wyOC4xNjMsMTEuOTUzTDI1MS40MjIsNDM5LjEwM3ogTTE5MC44NTMsMzQ2LjkyMWwxMS45NTMtMjguMTc3bDI4LjE2MywxMS45NTNsLTExLjk1MywyOC4xOTIgIEMyMTkuMDE1LDM1OC44ODcsMTkwLjg1MywzNDYuOTIxLDE5MC44NTMsMzQ2LjkyMXogTTIyNi43MDksMjYyLjQ0NmwyOC4xNjMsMTEuOTUzbC0xMS45NjYsMjguMTM0bC0yOC4xNDktMTEuOTUzTDIyNi43MDksMjYyLjQ0NnogICBNMjgzLjAzNSwyODYuMzM2bDI4LjE0OSwxMS45NTNsLTExLjk1MywyOC4xNjNsLTI4LjE0OS0xMS45NTJMMjgzLjAzNSwyODYuMzM2eiBNMzA2Ljk0LDIzMC4wMWwyOC4xNzcsMTEuOTY2bC0xMS45NjYsMjguMTYzICBsLTI4LjE3Ny0xMS45NTNMMzA2Ljk0LDIzMC4wMXogTTM2Ny41MjQsMzIyLjIwN2wtMTEuOTUyLDI4LjE0OGwtMjguMTc3LTExLjkzOGwxMS45NjYtMjguMTc3TDM2Ny41MjQsMzIyLjIwN3ogTTM2My4yODEsMjUzLjkxNSAgbDI4LjE0OCwxMS45NjZsLTExLjk1MiwyOC4xNDlsLTI4LjE2My0xMS45NTJDMzUxLjMxMywyODIuMDc3LDM2My4yODEsMjUzLjkxNSwzNjMuMjgxLDI1My45MTV6IE00NTIuOTY1LDM1OC40NjkgIGMtMy4wMTctMTIuMjI2LTcuNzk1LTI0LjMwOC0xNC40NjQtMzUuODU2bC0yLjY5OS00LjY2M3YwLjAxNWwtMjguMTYzLTExLjk2Nmw5LjAwNy0yMS4yMmwtMS4wODMtMS44OTEgIGMtMjkuMjMxLTUwLjY2Ny04NS40NTYtNzUuMzA4LTEzNi45MzItNjQuNDY4bC0xMS44MjIsMjcuODAzbC0yNy4xOTUtMTEuNTMzYy00Ny4zNDcsMzAuNjMxLTY1Ljk0LDkxLjIwMS00Ny4wODcsMTQ2LjE5OSAgbDE0LjUyMiw2LjE2NGwtNS43ODksMTMuNjU2YzAuNzk0LDEuNTE2LDEuNDcyLDMuMDYsMi4zMzgsNC41NDdsMjIuOTUyLDM5Ljc0YzkuODg4LDE3LjE0OSwyMi45MzcsMzEuMTk1LDM3Ljc3Nyw0Mi4wMDYgIGwzLjMwNS03Ljc2NmwyOC4xNjMsMTEuOTUzbC00LjY3NywxMS4wMTRjOS41OTksNC4wMTMsMTkuNTg4LDYuNzEyLDI5LjczNiw4LjI3MmwzLjEwNC03LjMxOGwyMC4yNTMsOC41NzQgIGMxNi41MjgtMC42NzgsMzIuOTI3LTQuODUxLDQ4LjI1Ny0xMi43MzJsLTAuMjMxLTAuMTAxbDExLjk1My0yOC4xNjNsMTcuMTQ5LDcuMjc1YzcuNTUtNy41MzUsMTQuMDQ2LTE1LjkzNiwxOS4yNTYtMjUuMDc0ICBsLTI0LjQzOS0xMC4zNzhsMTEuOTUyLTI4LjE3N2wyNC4wNjMsMTAuMjA1YzIuNzU4LTEwLjEwNSw0LjM0NS0yMC41ODUsNC41NjItMzEuMjgxbC0xNi42NzMtNy4wNzNsMTEuOTUyLTI4LjE2MyAgQzQ1Mi4wMTMsMzU4LjA2NSw0NTIuOTY1LDM1OC40NjksNDUyLjk2NSwzNTguNDY5eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+
+				<h3 class="code-pink">Congratulations on finding the pineapple incident.</h3><br>
+				<p class="code-green">IRL RULJLQDOPHQWH HALELGR HP  GH QRYHPEUR GH . H R HSLVRGLR PDLV YLVWR QD SULPHLUD WHPSRUDGD H R VHJXQGR PDLRU HSLVRGLR JHUDO GXUDQWH DV QRYH WHPSRUDGDV<br>
+					whg fkdprx vxd dwhqfdr gxudqwh vxd gdqfd ehedgd, h hohv wurfdudp qxphurv qr edqkhlur ihplqlqr gr edu<br>
+					hod qxqfd uhvsrqghx d vxd phqvdjhp vxevhtxhqwh, h hoh qxqfd ghvfreulx gh rqgh ylqkd r dedfdal, pdv hvwdyd gholflrvr. txhp h hod?
+				</p><br>
+
+				<div class="input-group mb-3">
+					<input type="text" name="her" id="her" class="form-control" placeholder="no tips" aria-label="Recipient's username" aria-describedby="basic-addon2">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" type="button"
+						onclick="test()">Test</button>
+					</div>
+				</div>
+
+				<p>If you are lost<a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwix9YWu57HeAhXGgJAKHddcB1oQjRx6BAgBEAU&url=https%3A%2F%2Fdezoitoevintetres.wordpress.com%2F2013%2F07%2F06%2Fjulio-cesar-nunca-foi-imperador-romano%2F&psig=AOvVaw173wrnq7AqYebwwEMYE9YC&ust=1541114041081187"> Here</a></a></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function test(){
+			var her = $('#her').val().toUpperCase();
+			if(her=='TRUDY'){
+				swal("Bom trabalho!", "Mas esse foi muito facil!", "success");
+			}else{
+				swal("Errou!", "Acho que superestimei sua capacidade!", "error");
+			}
+		}
+	</script>
+</body>
+</html>
