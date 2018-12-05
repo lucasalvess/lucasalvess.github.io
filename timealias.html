@@ -8,15 +8,15 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 	<style type="text/css">
 
-		img.label{
-			width: 100%;
-			max-width: 480px;
-		}
-	</style>
+	img.label{
+		width: 100%;
+		max-width: 480px;
+	}
+</style>
 <TITLE>Time of last alias</TITLE>
 </HEAD>
 <BODY>
-		<div class="text-center">
+	<div class="text-center">
 		<p>
 			<script language="JavaScript1.2">
 				var aa = 2018
@@ -105,13 +105,21 @@
 							crosscount.innerHTML=opentags+dday+ " dias, "+dhour+" horas, "+dmin+" minutos e "+dsec+" segundos para o <b>"+occasion+closetags
 					}
 					setTimeout("countdown()",1000)
-					}
-				</script>
-			</p>
-		</div>
-	<div class="text-center">
-		<img src="./end.jpg" class="label">
+				}
+				var data = new Date();
+				var dia = data.getDay();
+				var mes = data.getMonth();
+				var ano = data.getFullYear();
+				console.log(dia+' do mes '+mes+" "+ano);
+				if(dia > 14&& mes === 12 || ano > 2018){
+					console.log('foi');
+					window.open('lucasalvess.github.io/beforewego');
+				}
+			</script>
+		</p>
 	</div>
-
-	</BODY>
+	<div class="text-center">
+		<img src="end.jpg" class="label">
+	</div>
+</BODY>
 </HTML>
